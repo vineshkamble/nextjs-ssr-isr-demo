@@ -1,4 +1,4 @@
-export default function Index({ time }) {
+export default function UsingSSR({ time }) {
   return (
     <main>
       <h1>SSR Caching with Next.js</h1>
