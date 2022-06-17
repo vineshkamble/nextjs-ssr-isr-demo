@@ -17,7 +17,7 @@ import {
     try {
       const data = req.body;
       await addNewLead(data);
-      return res.status(201);
+      return res.status(201).end();
     } catch (error) {
       res.status(400).json({ error: 'Invalid JSON in request body' });
     }
