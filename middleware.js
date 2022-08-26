@@ -9,7 +9,7 @@ export function middleware(request) {
 }
 
 // See "Matching Paths" below to learn more
-export const config = {
-  matcher: ['/blog', '/using-ssr'],
-// matcher: ['/about/:path*', '/dashboard/:path*'],
-}
+// export const config = {
+//   matcher: ['/blog', '/using-ssr'],
+// // matcher: ['/about/:path*', '/dashboard/:path*'],
+// }
