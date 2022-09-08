@@ -3,6 +3,7 @@ function UsingISR({ post }) {
     <ul>
       {/* {posts.map((post) => ( */}
         <li key={post.id}>{post.title}</li>
+        <li key={post.id+"key"}>{post.generatedAt}</li>
       {/* ))} */}
     </ul>
   )
@@ -14,6 +15,7 @@ function UsingISR({ post }) {
 export async function getStaticProps({params}) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
   const post = await res.json()
+  post.generatedAt = new Date().toLocaleString()
   console.log("Getting data for ", params.id)
 
   return {
