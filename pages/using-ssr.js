@@ -8,6 +8,7 @@ export default function UsingSSR({ time }) {
 }
 
 export async function getServerSideProps({ req, res }) {
+  res.setHeader("cache-control", "max-age=3600")
   // res.setHeader(
   //   'Cache-Control',
   //   'public, s-maxage=10, stale-while-revalidate=59'
