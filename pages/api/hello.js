@@ -1,5 +1,4 @@
 export default function handler(req, res) {
-  // res.setHeader("cache-control", "max-age=3600")
   res
     .status(200)
     .send({
