@@ -1,4 +1,5 @@
 # Server-Side Rendering Caching Headers
+#
 # Vinesh
 
 This example uses [`stale-while-revalidate`](https://web.dev/stale-while-revalidate/) [cache-control headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) in combination with `getServerSideProps` for server-rendering.
