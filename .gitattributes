@@ -1,0 +1,6 @@
+.gitattributes !filter !diff
+secrets/prod/** filter=git-crypt-production diff=git-crypt-production
+secrets/dev/** filter=git-crypt diff=git-crypt
+secrets/stage/** filter=git-crypt-staging diff=git-crypt-staging
+secrets/cicd/** filter=git-crypt diff=git-crypt
+
