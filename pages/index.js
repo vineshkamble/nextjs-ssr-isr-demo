@@ -1,8 +1,8 @@
 export const Home = () => {
   return (
-        props: {
-      time: new Date().toISOString(),
-    }
+    <div >
+      <p>Home Page - Vinesh</p>
+    </div>
   )
 }
 export default Home
