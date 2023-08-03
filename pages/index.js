@@ -1,8 +1,6 @@
 export const Home = () => {
   return (
-    <div >
-      <p>Home Page</p>
-    </div>
+    console.log(process.env)
   )
 }
 export default Home
