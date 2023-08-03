@@ -1,6 +1,8 @@
 export const Home = () => {
   return (
-    console.log(process.env)
+        props: {
+      time: new Date().toISOString(),
+    }
   )
 }
 export default Home
